@@ -1,32 +1,31 @@
-<?php 
-
+<?php
+session_start();
 $title = 'Login';
-include('includes/header.php'); 
-
+include('includes/header.php');
+include('admin/config/dbconn.php');
 ?>
 
 <div class="login-box mt-5 py-5">
-    <div class="row">
-        <div class="col-2 col-sm-2 col-md-3 col-lg-4">
+    <div class="row justify-content-center">
 
-        </div>
         <div class="card py-5 px-5 mx-5 align-self-center center col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 mt-5">
             <div class="card-header text-center">
                 <h1>PAYROLL ADMIN LOGIN</h1>
             </div>
             <div class="card-body login-card-body my-3">
-                <form action="admin/index.php" id="login-form">
+                <form action="Vlogin.php" method="POST">
                     <div class="input-group mb-3">
-                        <input type="email" class="form-control" name="email" required placeholder="Email"
-                            autocomplete="off">
+                        <input type="email" name="email" class="form-control" name="email" placeholder="Email"
+                            autocomplete="off" required>
                         <div class="input-group-prepend">
                             <span class="input-group-text" style="font-size: 1.5em; background-color: white;"><i
                                     class="fas fa-envelope"></i></span>
                         </div>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="password" class="form-control" name="password" required placeholder="Password">
-                        <div class="input-group-prepend">
+                        <input type="password" name="password" class="form-control" name="password"
+                            placeholder="Password">
+                        <div class="input-group-prepend" required>
                             <span class="input-group-text" style="font-size: 1.5em; background-color: white;"><i
                                     class="fas fa-lock"></i></span>
                         </div>
@@ -39,7 +38,12 @@ include('includes/header.php');
                             </div>
                         </div>
                         <div class="col-4">
-                            <button type="submit" class="btn btn-primary btn-block">LOGIN</button>
+                            <button type="submit" name="login_btn" class="btn btn-primary btn-block">LOGIN</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 mt-1">
+                            <?php include('message.php'); ?>
                         </div>
                     </div>
                 </form>

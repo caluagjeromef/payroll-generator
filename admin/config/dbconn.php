@@ -10,5 +10,4 @@ if(!$conn){
     header('location: ../errors/dberror.php');
     die();
 }
-
 ?>

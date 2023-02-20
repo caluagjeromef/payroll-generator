@@ -1,11 +1,17 @@
 <?php 
-
+session_start();
 $title = "Dashboard";
 include('config/dbconn.php');
 include('includes/header.php'); 
 
+if (!isset($_SESSION['auth']) || $_SESSION['auth'] !== true) {
+    $_SESSION['message'] = "You must be logged in to access this page.";
+    header("Location: ../login.php");
+    exit();
+}
 ?>
 
+<?php include('../message.php'); ?>
 <div class="container-fluid px-4">
     <h1 class="mt-4">Dashboard</h1>
     <hr>
@@ -55,7 +61,7 @@ include('includes/header.php');
 
 
 
-<?php;
+<?php
 include('includes/footer.php');
 include('includes/script.php');
 ?>
