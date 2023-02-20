@@ -1,0 +1,15 @@
+html, body {
+    margin:0;
+    padding:0;
+    height: 100%;
+}
+body{
+	background: rgb(2,0,36);
+	background: linear-gradient(21deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 11%, rgba(6,66,159,1) 21%, rgba(5,170,174,1) 46%);
+    background-repeat: no-repeat;
+    background-size: cover;
+   	overflow: hidden;
+}
+.card{
+    border-radius: 10%;
+}

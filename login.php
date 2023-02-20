@@ -1,19 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-    <title>LOGIN | PAYROLL</title> 
+<?php 
 
-</head>
+$title = 'Login';
+include('includes/header.php'); 
 
-<body>
-    <div class="login-box mt-5 py-5">
-        <div class="row">
+?>
+
+<div class="login-box mt-5 py-5">
+    <div class="row">
         <div class="col-2 col-sm-2 col-md-3 col-lg-4">
 
         </div>
@@ -22,17 +15,20 @@
                 <h1>PAYROLL ADMIN LOGIN</h1>
             </div>
             <div class="card-body login-card-body my-3">
-                <form action="index.html" id="login-form">
-                    <div class="input-group mb-3">                        
-                        <input type="email" class="form-control" name="email" required placeholder="Email" autocomplete="off">
+                <form action="admin/index.php" id="login-form">
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" name="email" required placeholder="Email"
+                            autocomplete="off">
                         <div class="input-group-prepend">
-                            <span class="input-group-text" style="font-size: 1.5em; background-color: white;"><i class="fas fa-envelope"></i></span>
+                            <span class="input-group-text" style="font-size: 1.5em; background-color: white;"><i
+                                    class="fas fa-envelope"></i></span>
                         </div>
                     </div>
                     <div class="input-group mb-3">
                         <input type="password" class="form-control" name="password" required placeholder="Password">
                         <div class="input-group-prepend">
-                            <span class="input-group-text" style="font-size: 1.5em; background-color: white;"><i class="fas fa-lock"></i></span>
+                            <span class="input-group-text" style="font-size: 1.5em; background-color: white;"><i
+                                    class="fas fa-lock"></i></span>
                         </div>
                     </div>
                     <div class="row">
@@ -49,8 +45,8 @@
                 </form>
             </div>
         </div>
-            
+
     </div>
-    </div>
-</body>
-</html>
+</div>
+
+<?php include('includes/footer.php'); ?>
