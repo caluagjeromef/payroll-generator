@@ -38,7 +38,7 @@ include('admin/config/dbconn.php');
                             </div>
                         </div>
                         <div class="col-4">
-                            <button type="submit" name="login_btn" class="btn btn-primary btn-block">LOGIN</button>
+                            <button type="submit" name="login_btn" class="btn btn-success btn-block">LOGIN</button>
                         </div>
                     </div>
                     <div class="row">

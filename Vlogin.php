@@ -25,7 +25,7 @@ if (isset($_POST['login_btn'])) {
         ];
 
         if ($_SESSION['auth'] = true) {
-            $_SESSION['message'] = "You are now logged in";
+            $_SESSION['message'] = "Welcome ". $data['fname'];
             header('location: admin/index.php');
             exit(0);
         }
