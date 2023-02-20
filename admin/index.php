@@ -1,6 +1,10 @@
 <?php 
+
 $title = "Dashboard";
-include('includes/header.php'); ?>
+include('config/dbconn.php');
+include('includes/header.php'); 
+
+?>
 
 <div class="container-fluid px-4">
     <h1 class="mt-4">Dashboard</h1>
