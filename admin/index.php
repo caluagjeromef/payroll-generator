@@ -1,4 +1,6 @@
-<?php include('includes/header.php'); ?>
+<?php 
+$title = "index";
+include('includes/header.php'); ?>
 
 <div class="container-fluid px-4">
     <h1 class="mt-4">Dashboard</h1>
@@ -49,7 +51,7 @@
 
 
 
-<?php 
+<?php
 include('includes/footer.php');
 include('includes/script.php');
 ?>
