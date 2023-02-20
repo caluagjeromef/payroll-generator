@@ -4,9 +4,10 @@ html, body {
     height: 100%;
 }
 body{
-	background: rgb(2,0,36);
-	background: linear-gradient(21deg, rgba(2,0,36,1) 0%, rgba(96,210,83,1) 15%, rgba(86,231,161,1) 34%, rgba(160,221,167,1) 50%, rgba(217,233,219,1) 57%, rgba(86,187,98,1) 84%);
-    background-repeat: no-repeat;
+	background: rgb(255,255,255);
+	background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(92,184,92,1) 60%, rgba(23,102,17,1) 100%);
+	
+	background-repeat: no-repeat;
     background-size: cover;
    	overflow: hidden;
 }

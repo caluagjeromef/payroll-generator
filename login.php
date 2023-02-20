@@ -18,16 +18,14 @@ include('admin/config/dbconn.php');
                         <input type="email" name="email" class="form-control" name="email" placeholder="Email"
                             autocomplete="off" required>
                         <div class="input-group-prepend">
-                            <span class="input-group-text" style="font-size: 1.5em; background-color: white;"><i
-                                    class="fas fa-envelope"></i></span>
+                            <span class="input-group-text" style="font-size: 1.5em; background-color: white;"><i class="fas fa-envelope"></i></span>
                         </div>
                     </div>
                     <div class="input-group mb-3">
                         <input type="password" name="password" class="form-control" name="password"
                             placeholder="Password">
                         <div class="input-group-prepend" required>
-                            <span class="input-group-text" style="font-size: 1.5em; background-color: white;"><i
-                                    class="fas fa-lock"></i></span>
+                            <span class="input-group-text" style="font-size: 1.5em; background-color: white;"><i class="fas fa-lock"></i></span>
                         </div>
                     </div>
                     <div class="row">

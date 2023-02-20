@@ -24,7 +24,9 @@
         </div>
         <div class="sb-sidenav-footer">
             <div class="small">Logged in as:</div>
-            Admin [Name]
+            Admin 
+            <?php 
+            if (isset($_SESSION['fname']) ? $_SESSION['fname'] : 'No Name Set')?>
         </div>
     </nav>
 </div>
