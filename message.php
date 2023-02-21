@@ -1,7 +1,6 @@
-<?php
-if (isset($_SESSION['message'])) {
-    ?>
-    <div class="alert alert-warning alert-dismissible fade show text-center" id="alert-message" role="alert">
+<?php if (isset($_SESSION['message'])) { ?>
+    <div class="alert <?php echo $_SESSION['auth'] == true ? 'alert-success' : 'alert-warning' ?>
+    alert-dismissible fade show text-center" id="alert-message" role="alert">
         <strong style="font-size: 0.9em;">
             <?php echo $_SESSION['message']; ?>
         </strong>

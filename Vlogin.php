@@ -13,19 +13,21 @@ if (isset($_POST['login_btn'])) {
 
         foreach ($login_query_run as $data) {
             $user_id = $data['id'];
-            $user_name = $data['fname'] . ' ' . $data['lname'];
+            $user_fname = $data['fname'];
+            $user_lname = $data['lname'];
             $user_email = $data['email'];
         }
 
         $_SESSION['auth'] = true;
         $_SESSION['auth_user'] = [
             "user_id" => $user_id,
-            "user_name" => $user_name,
+            "user_fname" => $user_fname,
+            "user_lname" => $user_lname,
             "user_email" => $user_email
         ];
 
         if ($_SESSION['auth'] = true) {
-            $_SESSION['message'] = "Welcome ". $data['fname'];
+            $_SESSION['message'] = "Welcome ". $user_fname;
             header('location: admin/index.php');
             exit(0);
         }

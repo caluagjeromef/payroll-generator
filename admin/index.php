@@ -1,26 +1,23 @@
 <?php 
 session_start();
+if (!isset($_SESSION['auth']) || $_SESSION['auth'] !== true) {
+    $_SESSION['message'] = "You must be logged in to access the page.";
+    header("Location: ../login.php");
+    exit();
+}
 $title = "Dashboard";
 include('config/dbconn.php');
 include('includes/header.php'); 
 
-if (!isset($_SESSION['auth']) || $_SESSION['auth'] !== true) {
-    $_SESSION['message'] = "You must be logged in to access this page.";
-    header("Location: ../login.php");
-    exit();
-}
+
 ?>
 
 <?php include('../message.php'); ?>
+
 <div class="container-fluid px-4">
     <h1 class="mt-4">Dashboard</h1>
     <hr>
-    <div class="row">
-
-    </div>
-    <div class="row">
-
-    </div>
+    
     <div class="row">
         <!-- /.col -->
         <div class="col-12 col-sm-6 col-md-3">
