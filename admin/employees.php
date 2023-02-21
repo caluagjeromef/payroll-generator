@@ -15,7 +15,7 @@ include('includes/header.php');
 	<div class="card">
 		<div class="card-header d-flex justify-content-end">
 			<div class="card-tools">
-				<a class="btn btn-block btn-sm btn-default btn-flat border-success" href="./index.php?page=new_user"><i
+				<a class="btn btn-block btn-sm btn-default btn-flat border-success" href="new_employee.php"><i
 						class="fa fa-plus"></i> Add New Employee</a>
 			</div>
 		</div>
@@ -24,26 +24,32 @@ include('includes/header.php');
 				<thead>
 					<tr>
 						<th scope="col">Company ID</th>
-						<th scope="col">Position</th>
+						<th scope="col">Last Name</th>
 						<th scope="col">First Name</th>
 						<th scope="col">Middle Name</th>
-						<th scope="col">Last Name</th>
 						<th scope="col">Email</th>
+						<th scope="col">Position</th>
 						<th scope="col">Date Hired</th>
 						<th scope="col">Status</th>
 						<th scope="col">Action</th>
 					</tr>
 				</thead>
 				<tbody>
+					<?php 
+					$status = array('','Active','Inactive',);
+					$qry = $conn->query("SELECT * FROM tblemployee");
+					
+					while ($row = $qry->fetch_assoc()):					
+					?>
 					<tr>
-						<td>001</td>
-						<td>IT</td>
-						<td>Jerome</td>
-						<td>Ferrer</td>
-						<td>Caluag</td>
-						<td>jerome.f.caluag@gmail.com</td>
-						<td>02-06-2023</td>
-						<td>Active</td>
+						<td><?php echo $row['compID']?></td>
+						<td><?php echo $row['lastname']?></td>
+						<td><?php echo $row['firstname']?></td>
+						<td><?php echo $row['midname']?></td>
+						<td><?php echo $row['email']?></td>
+						<td><?php echo $row['position']?></td>
+						<td><?php echo $row['date_hired']?></td>
+						<td><?php echo $status[$row['status']]?></td>
 						<td class="text-center">
 							<div class="dropdown">
 								<button type="button"
@@ -64,34 +70,9 @@ include('includes/header.php');
 							</div>
 						</td>
 					</tr>
-					<tr>
-						<td>002</td>
-						<td>IT</td>
-						<td>Carl John</td>
-						<td>T</td>
-						<td>Torrevillo</td>
-						<td>carljohn@gmail.com</td>
-						<td>02-06-2023</td>
-						<td>Active</td>
-						<td class="text-center">
-							<button type="button"
-								class="btn btn-default btn-sm btn-flat border-info wave-effect text-info dropdown-toggle"
-								data-toggle="dropdown" aria-expanded="true">
-								Action
-							</button>
-							<div class="dropdown-menu">
-								<a class="dropdown-item view_user" href="javascript:void(0)"
-									data-id="<?php echo $row['id'] ?>">View</a>
-								<div class="dropdown-divider"></div>
-								<a class="dropdown-item"
-									href="./index.php?page=edit_user&id=<?php echo $row['id'] ?>">Edit</a>
-								<div class="dropdown-divider"></div>
-								<a class="dropdown-item delete_user" href="javascript:void(0)"
-									data-id="<?php echo $row['id'] ?>">Delete</a>
-							</div>
-						</td>
-					</tr>
 					<!-- Add more rows for additional employees -->
+					
+					<?php endwhile; ?>
 				</tbody>
 			</table>
 		</div>

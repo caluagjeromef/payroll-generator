@@ -14,7 +14,7 @@
           </a>
           <ul class="nav nav-treeview" id="nav-employees" style="display: none;">
             <li class="nav-item">
-              <a href="#" class="nav-link tree-item">
+              <a href="new_employee.php" class="nav-link tree-item">
                 <i class="sb-nav-link-icon fas fa-angle-right nav-icon"></i>
                 Add New
               </a>
@@ -36,14 +36,14 @@
           <ul class="nav nav-treeview" id="nav-employees" style="display: none;">
             <li class="nav-item">
               <a href="#" class="nav-link tree-item">
-                <i class="fas fa-angle-right nav-icon"></i>
-                <p>Add New</p>
+                <i class="sb-nav-link-icon fas fa-angle-right nav-icon"></i>
+                Add New
               </a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link tree-item">
-                <i class="fas fa-angle-right nav-icon"></i>
-                <p>List</p>
+              <a href="employees.php" class="nav-link tree-item">
+                <i class="sb-nav-link-icon fas fa-angle-right nav-icon"></i>
+                List
               </a>
             </li>
           </ul>
