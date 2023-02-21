@@ -14,9 +14,6 @@ include('includes/header.php');
 
 <?php include('../message.php'); ?>
 
-<div class="container-fluid px-4">
-    <h1 class="mt-4">Dashboard</h1>
-    <hr>
     
     <div class="row">
         <!-- /.col -->
