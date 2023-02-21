@@ -1,5 +1,5 @@
 <div id="layoutSidenav_nav">
-  <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+  <nav class="sb-sidenav sb-sidenav-dark" id="sidenavAccordion">
     <div class="sb-sidenav-menu">
       <div class="nav">
         <a class="nav-link" href="index.php">
@@ -41,7 +41,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="employees.php" class="nav-link tree-item">
+              <a href="#" class="nav-link tree-item">
                 <i class="sb-nav-link-icon fas fa-angle-right nav-icon"></i>
                 List
               </a>
