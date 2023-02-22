@@ -5,14 +5,14 @@ if (!isset($_SESSION['auth']) || $_SESSION['auth'] !== true) {
 	header("Location: ../login.php");
 	exit();
 }
-$title = "Employees";
+$title = "List of Employees";
 include('config/dbconn.php');
 include('includes/header.php');
 
 
 ?>
 <div class="col-lg-12">
-	<div class="card">
+	<div class="card border-3 border-success">
 		<div class="card-header d-flex justify-content-end">
 			<div class="card-tools">
 				<a class="btn btn-block btn-sm btn-default btn-flat border-success" href="new_employee.php"><i
@@ -58,9 +58,6 @@ include('includes/header.php');
 									Action
 								</button>
 								<div class="dropdown-menu">
-									<a class="dropdown-item view_user" href="javascript:void(0)"
-										data-id="<?php echo $row['id'] ?>">View</a>
-									<div class="dropdown-divider"></div>
 									<a class="dropdown-item"
 										href="./index.php?page=edit_user&id=<?php echo $row['id'] ?>">Edit</a>
 									<div class="dropdown-divider"></div>
