@@ -1,8 +1,8 @@
 <div id="layoutSidenav_nav">
   <nav class="sb-sidenav sb-sidenav-dark" id="sidenavAccordion">
     <div class="sb-sidenav-menu">
-      <div class="nav">
-        <a class="nav-link" href="index.php">
+      <div class="nav ps-4"  style="font-size: 20px;">
+        <a class="nav-link pt-3" href="index.php">
           <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
           Dashboard
         </a>
@@ -14,15 +14,15 @@
           </a>
           <ul class="nav nav-treeview" id="nav-employees" style="display: none;">
             <li class="nav-item">
-              <a href="new_employee.php" class="nav-link tree-item">
-                <i class="sb-nav-link-icon fas fa-angle-right nav-icon"></i>
-                Add New
-              </a>
-            </li>
-            <li class="nav-item">
               <a href="employees.php" class="nav-link tree-item">
                 <i class="sb-nav-link-icon fas fa-angle-right nav-icon"></i>
                 List
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="new_employee.php" class="nav-link tree-item">
+                <i class="sb-nav-link-icon fas fa-angle-right nav-icon"></i>
+                Add New
               </a>
             </li>
           </ul>
@@ -34,18 +34,19 @@
               <i class="ps-2 right fas fa-angle-down"></i>
           </a>
           <ul class="nav nav-treeview" id="nav-employees" style="display: none;">
-            <li class="nav-item">
-              <a href="#" class="nav-link tree-item">
-                <i class="sb-nav-link-icon fas fa-angle-right nav-icon"></i>
-                Add New
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link tree-item">
+          	<li class="nav-item">
+              <a href="payroll.php" class="nav-link tree-item">
                 <i class="sb-nav-link-icon fas fa-angle-right nav-icon"></i>
                 List
               </a>
             </li>
+            <li class="nav-item">
+              <a href="new_payroll.php" class="nav-link tree-item">
+                <i class="sb-nav-link-icon fas fa-angle-right nav-icon"></i>
+                Add New
+              </a>
+            </li>
+            
           </ul>
         </li>
       </div>

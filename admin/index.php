@@ -48,7 +48,7 @@ include('includes/header.php');
                     <span class="info-box-icon bg-gradient-dark elevation-1"><i class="fas fa-cash-register"></i></span>
                     <span class="info-box-text">Total Payrolls</span><br>
                     <span class="info-box-number ps-4">
-                        &nbsp;6
+                        &nbsp;#
                     </span>
                 </div>
                 <!-- /.info-box-content -->
