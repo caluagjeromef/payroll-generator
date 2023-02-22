@@ -12,6 +12,7 @@ include('includes/header.php');
 
 ?>
 <div class="col-lg-12">
+	<?php include('../message.php'); ?>
 	<div class="card border-3 border-success">
 		<div class="card-header d-flex justify-content-end">
 			<div class="card-tools">
@@ -58,11 +59,11 @@ include('includes/header.php');
 									Action
 								</button>
 								<div class="dropdown-menu">
-									<a class="dropdown-item"
-										href="./index.php?page=edit_user&id=<?php echo $row['id'] ?>">Edit</a>
+									<a class="dropdown-item" href="edit_employee.php?id=<?php echo $row['id'] ?>">Edit</a>
 									<div class="dropdown-divider"></div>
-									<a class="dropdown-item delete_user" href="javascript:void(0)"
-										data-id="<?php echo $row['id'] ?>">Delete</a>
+									<form action="crud.php" method="POST">
+										<button class="dropdown-item" type="submit" name="delete_employee" value="<?php echo $row['id'] ?>">Delete</button>
+									</form>
 								</div>
 							</div>
 						</td>
