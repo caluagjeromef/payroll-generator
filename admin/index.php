@@ -23,7 +23,18 @@ include('includes/header.php');
                     <span class="info-box-icon bg-gradient-dark elevation-1"><i class="fas fa-building"></i></span>
                     <span class="info-box-text">Total Employees</span><br>
                     <span class="info-box-number ps-4">
-                        6
+                        <?php 
+                        $total_emp = "SELECT COUNT(id) as total_emp FROM tblemployee";
+                        $result = mysqli_query($conn, $total_emp);
+                        
+                        if ($result) {
+                            $row = mysqli_fetch_assoc($result);
+                            $total_emp = $row['total_emp'];
+                            echo $total_emp;
+                        }else {
+                            echo "Error: " . mysqli_error($conn);
+                        }
+                        ?>
                     </span>
                 </div>
                 <!-- /.info-box-content -->

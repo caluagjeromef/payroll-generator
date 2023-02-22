@@ -16,7 +16,7 @@ include('includes/header.php');
 <h4 class="text-center">Employee Details</h4>
         <form method="post" action="crud.php">
         	<div class="row mb-3">
-                <div class="col-sm-6">
+                <div class="col-sm-12">
                 	<label for="inputCompID" class="col-sm-10 col-form-label">Company ID</label>
                     <input type="text" name="compID" class="form-control" id="inputCompID" autocomplete="off" required>
                 </div>
