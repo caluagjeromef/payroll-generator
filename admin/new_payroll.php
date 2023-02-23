@@ -10,6 +10,13 @@ include('config/dbconn.php');
 include('includes/header.php');
 ?>
 
+<form action="upload.php" method="post" enctype="multipart/form-data">
+  <input type="file" name="upload">
+  <input type="submit">
+</form>
+
+<h1><?php include('../message.php'); ?></h1>
+
 
 
 
