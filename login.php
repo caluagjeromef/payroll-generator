@@ -42,7 +42,8 @@ include('admin/config/dbconn.php');
                     
                     <div class="row">
                         <div class="col-12 mt-1">
-                            <?php include('message.php'); ?>
+                            <?php
+                            include('message.php'); ?>
                         </div>
                     </div>
                 </form>
