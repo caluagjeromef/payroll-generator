@@ -33,7 +33,7 @@ if (isset($_POST['login_btn'])) {
         }
 
     } else {
-        $_SESSION['message'] = "Invalid Email and/or Password";
+        $_SESSION['errmessage'] = "Invalid Email and/or Password";
         header('location: login.php');
         exit(0);
     }
